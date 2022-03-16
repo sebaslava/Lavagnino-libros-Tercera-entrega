@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    height: $altobody - 80;
+    padding: 0 20px;
+    .title{
+        color: $colortitulos;
+        text-align: left;
+        font-family: 'Amatic SC', cursive;
+        font-size: 5rem;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    
+}

@@ -1,0 +1,22 @@
+$altobody:100vh;
+$colortitulos: rgb(255, 255, 255);
+$paleta: (
+    primary: rgb(179, 58, 58),
+    secondary: rgb(157, 140, 255),
+    succes: rgb(25, 126, 46),
+    
+);
+
+.iconStyle{border: 1px solid;
+    border-radius: 20px;}
+
+
+@mixin redes($color) {
+    color:$color;
+    font-size: 25px;   
+}
+
+@each $nombre, $color in $paleta {
+    .#{$nombre}{@include redes($color)
+    }.#{$nombre}{@extend .iconStyle}
+    }
