@@ -1,6 +1,5 @@
 @import "variables";
 @import"header";
-@import"navbar";
 @import "footer";
 
 body {
@@ -23,10 +22,32 @@ main{
     text-decoration: underline;
     margin-top: 20px;
     color:$colortitulos;}
-    .titlequien
-{
+    .titlequien{
     font-family: 'Amatic SC', cursive;
-    color: white;
-    font-size: 30px;
+    text-align: center;
+    color:white;
+    font-size: 30px;}
+.contenido{font-family:'Amatic SC', cursive;
+color: rgb(77, 75, 75);
+font-size: 20px;
+text-align: center;
+text-shadow: rgb(255, 255, 255) 0 -3px;
 }
+}
+.containergrid{
+    display: grid;
+    grid-template-areas: "numero1 numero2 numero3"
+    "numero1 numero4 numero3"
+    "numero5 numero4 numero6";
+    height: 500px;
+    width: 600px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 300px;
+    border: solid 5px white;
+    .numero1,.numero2, .numero3, .numero4, .numero5, .numero6{
+        display: grid;
+        align-items: center;
+        border: solid 4px red;
+        color: white;
+    font-size: 40px;}
 }
