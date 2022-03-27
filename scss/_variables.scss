@@ -10,12 +10,11 @@ $paleta: (
 
 .iconStyle{border: 1px solid;
     border-radius: 20px;}
-    
 
 
 @mixin redes($color) {
     color:$color;
-    font-size: 15px;   
+    font-size: 25px;   
 }
 
 @each $nombre, $color in $paleta {
